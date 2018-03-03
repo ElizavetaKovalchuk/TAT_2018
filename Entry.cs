@@ -5,7 +5,7 @@ namespace DEV_1
     class Entry
     {
         /// <summary>
-        /// Prints to the console the maximum number of identical consecutive symbols in the string
+        /// It is an entry point of the program and passes to the console the maximum number of identical consecutive symbols in the string
         /// </summary>
         /// <param name="args">Сommand-line arguments</param>
         static void Main(string[] args)
