@@ -18,7 +18,7 @@ namespace DEV_1
         /// <returns>The maximum number of identical consecutive symbols in a string</returns>
         public int SerchMaxNumberOfSymbol()
         {
-            int max_count = 0;
+            int max_count = 1;
             int count = 1;
             for (int i = 0; i < sequenceOfSymbol.Length - 1; i++)
             {
