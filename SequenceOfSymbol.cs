@@ -20,13 +20,13 @@ namespace DEV_1
         /// This method finds the maximum number of identical consecutive symbols in a string
         /// </summary>
         /// <returns>The maximum number of identical consecutive symbols in a string</returns>
-        public int SerchMaxNumberOfSymbol(){
-            char[] sequence = sequenceOfSymbol.ToCharArray();
+        public int SerchMaxNumberOfSymbol()
+        {
             int max_count = 0;
             int count = 1;
-            for (int i = 0; i < sequence.Length - 1; i++)
+            for (int i = 0; i < sequenceOfSymbol.Length - 1; i++)
             {
-                if (sequence[i] == sequence[i + 1])
+                if (sequenceOfSymbol[i] == sequenceOfSymbol[i + 1])
                 {
                     count++;
                 }
