@@ -23,8 +23,6 @@ namespace DEV_1
                 SequenceOfSymbol acceptedSequence = new SequenceOfSymbol(args[0]);
                 Console.WriteLine(acceptedSequence.SerchMaxNumberOfSymbol());
             }
-           
-            Console.ReadKey();
         }
     }
 }
