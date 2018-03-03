@@ -2,7 +2,7 @@
 
 namespace DEV_1
 {
-    class Program
+    class Entry
     {
         /// <summary>
         /// Prints to the console the maximum number of identical consecutive symbols in the string
