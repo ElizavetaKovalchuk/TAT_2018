@@ -3,7 +3,7 @@ using System.Text;
 
 namespace DEV_2
 {
-    class EntryPoin
+    class EntryPoint
     {
         /// <summary>
         /// It is an entry point of the program and it is outputs elements with odd ideks
@@ -21,7 +21,6 @@ namespace DEV_2
             {
                 SerchOddElements enteredSymbol = new SerchOddElements(line);
                 Console.WriteLine(enteredSymbol.SerchOddSymbol());
-                Console.ReadKey();
             }
         }
     }
