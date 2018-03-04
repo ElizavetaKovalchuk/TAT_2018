@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Text;
+
 namespace DEV_2
 {
     /// <summary>
-    /// Serch elements with odd indeks in a string and create string
+    /// Serch elements with odd index in a string and create string
     /// </summary>
     class Creator
     {
@@ -12,8 +13,9 @@ namespace DEV_2
         {
             sequnceOfSymbol = enteredSequence;
         }
+        
         /// <summary>
-        /// Serch elements with odd indeks in a string and create string
+        /// Serch elements with odd index in a string and create string
         /// </summary>
         /// <returns> string of elements with odd indeks</returns>
         public string CreateSequenceOfOddSymbol()
