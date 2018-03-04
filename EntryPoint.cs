@@ -6,7 +6,7 @@ namespace DEV_2
     class EntryPoint
     {
         /// <summary>
-        /// It is an entry point of the program and it is outputs elements with odd ideks
+        /// It is an entry point of the program and it is outputs elements with odd indeks
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -19,8 +19,8 @@ namespace DEV_2
             }
             else
             {
-                SerchOddElements enteredSymbol = new SerchOddElements(line);
-                Console.WriteLine(enteredSymbol.SerchOddSymbol());
+                Creator enteredSequence = new Creator(line);
+                Console.WriteLine(enteredSequence.CreateSequenceOfOddSymbol());
             }
         }
     }
