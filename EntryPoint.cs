@@ -5,16 +5,24 @@ namespace DEV_2
 {
     class EntryPoin
     {
+        /// <summary>
+        /// It is an entry point of the program and it is outputs elements with odd ideks
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a string:");
             string line = Console.ReadLine();
-            StringBuilder sequence = new StringBuilder(line);
-            for (int i = 0; i < sequence.Length; i++)
+            if (line.Length == 0)
             {
-                sequence = sequence.Remove(i,1);
+                Console.WriteLine("String is empty");
             }
-            Console.WriteLine(sequence);
+            else
+            {
+                SerchOddElements enteredSymbol = new SerchOddElements(line);
+                Console.WriteLine(enteredSymbol.SerchOddSymbol());
+                Console.ReadKey();
+            }
         }
     }
 }
