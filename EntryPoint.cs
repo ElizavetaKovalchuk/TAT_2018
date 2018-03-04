@@ -6,7 +6,7 @@ namespace DEV_2
     class EntryPoint
     {
         /// <summary>
-        /// It is an entry point of the program and it is outputs elements with odd indeks
+        /// It is an entry point of the program and it is outputs elements with odd index
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
