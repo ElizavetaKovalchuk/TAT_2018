@@ -18,10 +18,10 @@ namespace DEV_2
         /// <returns> string of elements with odd indeks</returns>
         public string CreateSequenceOfOddSymbol()
         {
-            StringBuilder oddElements = new StringBuilder(sequnceOfSymbol);
-            for (int i = 1; i < oddElements.Length; i++)
+            StringBuilder oddElements = new StringBuilder();
+            for (int i = 0; i < sequnceOfSymbol.Length; i += 2)
             {
-                oddElements = oddElements.Remove(i,1);
+                oddElements.Append(sequnceOfSymbol[i]);
             }
             return oddElements.ToString();
         }
