@@ -8,12 +8,13 @@ namespace DEV_3
     /// </summary>
     class NumbersConversion
     {
-        int number;
+        int decimalNumber;
         int scaleOfNotation;
-        public NumbersConversion (int arg0, int arg1)
+        
+        public NumbersConversion (int arg1, int arg2)
         {
-            number = arg0;
-            scaleOfNotation = arg1;
+            decimalNumber = arg1;
+            scaleOfNotation = arg2;
         }
 
         /// <summary>
@@ -23,20 +24,17 @@ namespace DEV_3
         public List<int> ConversionToRadix()
         {
             List<int> convertedNumber = new List<int>();
-            int result = 0;
-            while (number > 0)
+            while (decimalNumber > 0)
             {
-                result = number % scaleOfNotation;
-                if (result <= 9)
+                if (decimalNumber % scaleOfNotation <= 9)
                 {
-                    convertedNumber.Insert(0, result);
+                    convertedNumber.Insert(0, decimalNumber % scaleOfNotation);
                 }
                 else
                 {
-                    char scale = (char)(65 + result - 10);
-                    convertedNumber.Insert(0, scale);
+                    convertedNumber.Insert(0, (char)(65 + decimalNumber % scaleOfNotation - 10));
                 }
-                number /= scaleOfNotation;
+                decimalNumber /= scaleOfNotation;
             }
             return convertedNumber;
         }
