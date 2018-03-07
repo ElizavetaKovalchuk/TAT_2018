@@ -11,15 +11,16 @@ namespace DEV_3
     {
         static void Main(string[] args)
         {
-            if (Int32.Parse(args[1]) >= 2 && Int32.Parse(args[1]) <= 20)
+            int arg1 = Int32.Parse(args[0]);
+            int arg2 = Int32.Parse(args[1]);
+            if (arg2 >= 2 && arg2 <= 20)
             {
-                NumbersConversion enteredValues = new NumbersConversion(Int32.Parse(args[0]), Int32.Parse(args[1]));
+                NumbersConversion enteredValues = new NumbersConversion(arg1, arg2);
                 foreach (var convertedNumber in enteredValues.ConversionToRadix())
                 {
                     Console.WriteLine(convertedNumber);
                 }
             }
-            Console.ReadKey();
         }
     }
 }
